@@ -2,29 +2,29 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Link Harvester</title>
+	<title>JSON Validator</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 	<div class="clearfix"></div>
 	<div class="container">
 		<div class="jumbotron">
-			<h2>To harvest links, you can either paste your code below or upload a file</h4>
+			<h2>To validate JSON, you can either paste your code below or upload a file</h4>
 		</div>
 	</div>
 	<div class="container">
 		<div class="form-group"><label for="codeText">Paste your code here:</label><textarea name="" id="codeText" rows="10" class="form-control" value=""></textarea></div>
-		<a href="#" class="btn btn-primary" id="parseButton">Harvest Links</a>
+		<a href="#" class="btn btn-primary" id="validateButton">Validate JSON</a>
 		<div class="form-inline">
-			<input type="file" class="form-control" id="fileUpload">
+			<input type="file" accept=".json" class="form-control" id="fileUpload">
 			<button class="btn btn-info" id="submit">Submit</button>
 		</div>
-		<div class="form-group"><label for="codeOutput" id="outputLabel">Output:</label><textarea id="codeOutput" rows="10" class="form-control"></textarea>
+		<div class="form-group"><label for="result" id="outputLabel">Output:</label><textarea id="result" rows="10" class="form-control"></textarea>
 		</div>
 		</div>
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/linkharvester.js"></script>
+	<script type="text/javascript" src="js/validator.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
